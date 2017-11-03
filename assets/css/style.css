@@ -56,3 +56,27 @@ li.nav-item.active a {
     border-color: #C0202F;
     color: #C0202F;
 }
+
+.news {
+    background-color: #000000;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 0;
+    border: 0;
+}
+
+.news .subtitle, .news .title, .news .date {
+    display: block;
+    color: #fff;
+}
+
+.card-news {
+    border-radius: 0;
+    border: 0;
+}
+
+.card-news img {
+    opacity: 0.6;
+}
