@@ -4,23 +4,23 @@ body {
     color: #95989A;
 }
 
-.top-color {
+.accent-color {
     width: 100%;
     height: 20px;
     border-collapse: collapse;
 }
 
-.top-color td {
+.accent-color td {
     margin: 0;
     padding: 0;
 }
 
-.top-color td.black {
+.accent-color td.black {
     width: 30%;
     background-color: #231F20;
 }
 
-.top-color td.red {
+.accent-color td.red {
     width: 70%;
     background-color: #C0202F;
 }
@@ -98,4 +98,19 @@ li.nav-item.active a {
 .card-profile.main {
     background-color:#C0202F;
     color: #fff;
+}
+
+.card-profile .social {
+    position: absolute;
+    left: 0;
+    top: 90px;
+}
+
+footer {
+    background-color: #383838;
+    color: #fff;
+}
+
+footer p {
+    font-size: 14px;
 }
