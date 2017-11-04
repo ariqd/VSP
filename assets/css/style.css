@@ -141,11 +141,18 @@ li.nav-item.active a {
 
 .card-profile {
     border-radius: 0;
+    border-color: #ffffff;
     -o-transition: color .5s ease-out, background .5s ease-in;
     -ms-transition: color .5s ease-out, background .5s ease-in;
     -moz-transition: color .5s ease-out, background .5s ease-in;
     -webkit-transition: color .5s ease-out, background .5s ease-in;
     transition: color .5s ease-out, background .5s ease-in;
+}
+
+.card img.card-img-top {
+    border: 0;
+    border-radius: 0;
+    max-height: 270px;
 }
 
 .card-profile .card-title {
@@ -217,4 +224,10 @@ footer p {
     width: 10px;
     height: 10px;
     margin-top: -2px;
+}
+
+.section {
+    background-color: #fff;
+    margin-top: -150px;
+    padding: 80px 100px;
 }
