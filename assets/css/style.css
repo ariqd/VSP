@@ -248,3 +248,13 @@ footer p {
         padding: 30px;
     }
 }
+
+.btn-vsp-extended {
+    background-color: #C0202F;
+    color: #fff;
+}
+
+.btn-vsp-extended:hover {
+    background-color: #C0202F;
+    color: #fff;
+}
