@@ -126,7 +126,7 @@
                       <img class="card-img img-fluid" src="assets/img/news1.png" alt="Card image" style="height:450px;">
                       <div class="card-img-overlay">
                         <p class="card-text">CASES NEWS</p>
-                        <h2 class="card-title">Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya</h2>
+                        <h2 class="card-title" id="cookie">Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya</h2>
                         <p class="card-text date">22 Desember 2016 | Sumba | NTT</p>
                       </div>
                     </a>
@@ -365,6 +365,11 @@
                     $('#profile-6').removeClass('main', '100');
                 })
             });
+
+            // testing purpose only
+            // TODO: delete before final publish
+            var text = document.cookie.split(";")[0].split("=")[1];
+            document.getElementById("cookie").innerHTML = text;
         </script>
     </body>
 </html>

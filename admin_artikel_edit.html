@@ -112,22 +112,29 @@
 
         <main role="main" class="col-sm-9 ml-sm-auto col-md-10 pt-3">
           <h1> <a href="#"><img src="assets/img/prev.png" width="35" alt="back" class="img-fluid"></a> Edit Artikel</h1>
-          <form action="admin_artikel.html" method="post">
+          <form action="admin_artikel.html" method="post" onsubmit="store()">
               <div class="form-group">
                   <label for="judul">Judul</label>
-                  <input type="email" class="form-control" id="judul" placeholder="Judul artikel anda...">
+                  <input type="text" class="form-control" id="judul" placeholder="Judul artikel anda..."
+                  value="Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya">
                 </div>
                 <div class="row">
                     <div class="col-6">
                         <div class="form-group">
                         <label for="kolom1">Kolom 1</label>
-                        <textarea class="form-control" id="kolom1" rows="10"></textarea>
+                        <textarea class="form-control" id="kolom1" rows="10">VSP has a very strong and experienced Insolvency & bankruptcy team made up two curators and four associates.
+
+We offer solutions to provide legal services in the field of Insolvency & bankruptcy includes applying PKPU and Insolvency in the Commercial Court, assisting and representing the client as Respondent Bankrupt / PKPU, as well as assisting clients in Debt Restructuring and Reorganization of the Company.
+                        </textarea>
                       </div>
                     </div>
                     <div class="col-6">
                         <div class="form-group">
                         <label for="kolom2">Kolom 2</label>
-                        <textarea class="form-control" id="kolom2" rows="10"></textarea>
+                        <textarea class="form-control" id="kolom2" rows="10">VSP has a very strong and experienced Insolvency & bankruptcy team made up two curators and four associates.
+
+We offer solutions to provide legal services in the field of Insolvency & bankruptcy includes applying PKPU and Insolvency in the Commercial Court, assisting and representing the client as Respondent Bankrupt / PKPU, as well as assisting clients in Debt Restructuring and Reorganization of the Company.
+                        </textarea>
                       </div>
                     </div>
                 </div>
@@ -147,5 +154,11 @@
       crossorigin="anonymous"></script>
       <script src="assets/js/popper.min.js" charset="utf-8"></script>
     <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+      function store() {
+        var text = document.getElementById("judul").value;
+        document.cookie = "text=" + text + "; path=/";
+      }
+    </script>
 </body>
 </html>

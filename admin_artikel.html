@@ -130,10 +130,11 @@
                   </div>
                 <div class="card-body">
                   <p class="card-text">CASES NEWS</p>
-                  <h4 class="card-title">Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya</h4>
+                  <h4 class="card-title" id="title">Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya</h4>
                   <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
                 </div>
                 <div class="card-footer">
+                    <a href="news.html" class="card-link text-secondary">Lihat Artikel</a>
                     <a href="admin_artikel_edit.html" class="card-link">Edit</a>
                     <a href="#" class="card-link text-danger">Hapus</a>
                </div>
@@ -181,5 +182,12 @@
       crossorigin="anonymous"></script>
       <script src="assets/js/popper.min.js" charset="utf-8"></script>
     <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+    <script type="text/javascript">
+        /* this just grabs the value of the first cookie for your site.
+         * if you use cookies elsewhere, you'll need to add logic to
+         * make sure you get the correct cookie. */
+        var text = document.cookie.split(";")[0].split("=")[1];
+        document.getElementById("title").innerHTML = text;
+      </script>
 </body>
 </html>
