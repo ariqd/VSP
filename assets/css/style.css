@@ -112,40 +112,30 @@ li.nav-item.active a {
     color: #C0202F;
 }
 
-.news {
-    background-color: #000000;
-    opacity: 0.5;
-    top: 0;
-    left: 0;
-    position: relative;
+.card-news {
     border-radius: 0;
     border: 0;
 }
 
-.news .subtitle, .news .title, .news .date {
-    display: block;
-    color: #fff;
-}
-
-.card-clean {
-    border-radius: 0;
-    border: 0;
-}
-
-.card-clean img {
+.card-news img {
     opacity: 0.6;
 }
 
-.card-clean .date {
+.card-news:hover img {
+    color: #000;
+    opacity: 0.2;
+}
+
+.card-news .date {
     position: absolute;
     bottom: 20px;
 }
 
-.card-clean .card-title {
+.card-news .card-title {
     font-family: DIN-Bold;
 }
 
-.card-clean .card-text {
+.card-news .card-text {
     font-family: Klavika-Bold;
 }
 
