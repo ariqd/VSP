@@ -49,6 +49,11 @@ h6, p {
 
  .btn {
      font-family: Klavika-Bold;
+     font-size: 12px;
+ }
+
+ .btn.btn-sm {
+     padding: 5px 0;
  }
 
 .accent-color {
@@ -78,7 +83,7 @@ h6, p {
 
 .navbar.navbar-vsp a{
     color: #95989A;
-    font-size: 13px;
+    font-size: 11px;
     margin: 0 7px;
 }
 
