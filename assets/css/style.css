@@ -141,6 +141,11 @@ li.nav-item.active a {
 
 .card-profile {
     border-radius: 0;
+    -o-transition: color .5s ease-out, background .5s ease-in;
+    -ms-transition: color .5s ease-out, background .5s ease-in;
+    -moz-transition: color .5s ease-out, background .5s ease-in;
+    -webkit-transition: color .5s ease-out, background .5s ease-in;
+    transition: color .5s ease-out, background .5s ease-in;
 }
 
 .card-profile .card-title {
@@ -153,6 +158,11 @@ li.nav-item.active a {
     bottom: 20px;
     font-family: Klavika-Bold;
     font-size: 18px;
+}
+
+.card-profile:hover, .card-image:hover + .card-profile {
+    background-color: #C0202F;
+    color: #fff;
 }
 
 .card-profile.main {

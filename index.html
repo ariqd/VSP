@@ -165,25 +165,26 @@
             </div>
             <div class="row no-gutters my-5">
                 <div class="card-group my-4">
-                  <div class="card card-profile main">
-                    <div class="card-body">
-                      <h5 class="card-title">Managing Partner</h5>
-                      <div class="social">
-                          <a href="#">
-                              <img src="assets/img/ig.png" alt="instagram-logo">
-                          </a> <br>
-                          <a href="#">
-                              <img src="assets/img/fb.png" alt="facebook-logo">
-                          </a>
+                    <div class="card card-profile" id="profile-1">
+                      <div class="card-body">
+                        <h5 class="card-title">Managing Partner</h5>
+                        <div class="social">
+                            <a href="#">
+                                <img src="assets/img/ig.png" alt="instagram-logo">
+                            </a> <br>
+                            <a href="#">
+                                <img src="assets/img/fb.png" alt="facebook-logo">
+                            </a>
+                        </div>
+                        <p class="card-text">Verry Sitorus, S.H</p>
                       </div>
-                      <p class="card-text">Verry Sitorus, S.H</p>
                     </div>
-                  </div>
-                  <div class="card">
-                    <img class="card-img-top" src="assets/img/1.png">
-                  </div>
+                    <div class="card">
+                      <img class="card-img-top" src="assets/img/1.png" id="image-1">
+                    </div>
 
-                  <div class="card card-profile">
+
+                  <div class="card card-profile" id="profile-2">
                     <div class="card-body">
                       <h5 class="card-title">Advocate &amp; Curator</h5>
                       <div class="social">
@@ -198,15 +199,15 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img class="card-img-top" src="assets/img/2.png">
+                    <img class="card-img-top" src="assets/img/2.png" id="image-2">
                   </div>
 
                   <div class="w-100"></div>
 
-                  <div class="card">
-                    <img class="card-img-top" src="assets/img/3.png">
+                  <div class="card card-image">
+                    <img class="card-img-top" src="assets/img/3.png" class="card-image">
                   </div>
-                  <div class="card card-profile">
+                  <div class="card card-profile" id="profile-3">
                     <div class="card-body">
                       <h5 class="card-title">Advocate</h5>
                       <div class="social">
@@ -221,10 +222,10 @@
                     </div>
                   </div>
 
-                  <div class="card">
-                    <img class="card-img-top" src="assets/img/4.png">
+                  <div class="card card-image">
+                    <img class="card-img-top" src="assets/img/4.png" class="card-image">
                   </div>
-                  <div class="card card-profile">
+                  <div class="card card-profile" id="profile-4">
                     <div class="card-body">
                       <h5 class="card-title">Advocate</h5>
                       <div class="social">
@@ -241,7 +242,7 @@
 
                   <div class="w-100"></div>
 
-                  <div class="card card-profile">
+                  <div class="card card-profile" id="profile-5">
                     <div class="card-body">
                       <h5 class="card-title">Advocate</h5>
                       <div class="social">
@@ -256,10 +257,10 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img class="card-img-top" src="assets/img/5.png">
+                    <img class="card-img-top" src="assets/img/5.png" id="image-5">
                   </div>
 
-                  <div class="card card-profile">
+                  <div class="card card-profile" id="profile-6">
                     <div class="card-body">
                       <h5 class="card-title">Advocate</h5>
                       <div class="social">
@@ -274,7 +275,7 @@
                     </div>
                   </div>
                   <div class="card">
-                    <img class="card-img-top" src="assets/img/6.png">
+                    <img class="card-img-top" src="assets/img/6.png" id="image-6">
                   </div>
                 </div>
             </div>
@@ -333,6 +334,79 @@
 		  src="https://code.jquery.com/jquery-3.2.1.min.js"
 		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 		  crossorigin="anonymous"></script>
+        <script
+		  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+		  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+		  crossorigin="anonymous"></script>
         <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                // $('#profile-1').hover(function () {
+                //     $(this).addClass('main', '100');
+                // },function () {
+                //     $(this).removeClass('main', '100');
+                // })
+                $('#image-1').hover(function () {
+                    $('#profile-1').addClass('main', '100');
+                }, function () {
+                    $('#profile-1').removeClass('main', '100');
+                })
+
+                // $('#profile-2').hover(function () {
+                //     $(this).addClass('main', '100');
+                // },function () {
+                //     $(this).removeClass('main', '100');
+                // })
+                $('#image-2').hover(function () {
+                    $('#profile-2').addClass('main', '100');
+                }, function () {
+                    $('#profile-2').removeClass('main', '100');
+                })
+                //
+                // $('#profile-3').hover(function () {
+                //     $(this).addClass('main', '100');
+                // },function () {
+                //     $(this).removeClass('main', '100');
+                // })
+                // $('#image-3').hover(function () {
+                //     $('#profile-3').addClass('main', '100');
+                // }, function () {
+                //     $('#profile-3').removeClass('main', '100');
+                // })
+                //
+                // $('#profile-4').hover(function () {
+                //     $(this).addClass('main', '100');
+                // },function () {
+                //     $(this).removeClass('main', '100');
+                // })
+                // $('#image-4').hover(function () {
+                //     $('#profile-4').addClass('main', '100');
+                // }, function () {
+                //     $('#profile-4').removeClass('main', '100');
+                // })
+                //
+                // $('#profile-5').hover(function () {
+                //     $(this).addClass('main', '100');
+                // },function () {
+                //     $(this).removeClass('main', '100');
+                // })
+                $('#image-5').hover(function () {
+                    $('#profile-5').addClass('main', '100');
+                }, function () {
+                    $('#profile-5').removeClass('main', '100');
+                })
+                //
+                // $('#profile-6').hover(function () {
+                //     $(this).addClass('main', '100');
+                // },function () {
+                //     $(this).removeClass('main', '100');
+                // })
+                $('#image-6').hover(function () {
+                    $('#profile-6').addClass('main', '100');
+                }, function () {
+                    $('#profile-6').removeClass('main', '100');
+                })
+            });
+        </script>
     </body>
 </html>
