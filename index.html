@@ -368,7 +368,11 @@
             // testing purpose only
             // TODO: delete before final publish
             var text = document.cookie.split(";")[0].split("=")[1];
-            document.getElementById("cookie").innerHTML = text;
+            if (text == undefined) {
+                document.getElementById("cookie").innerHTML = "Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya"
+            } else {
+                document.getElementById("cookie").innerHTML = text;
+            }
 
             $('#profile-1').on('click', function(event) {
                  window.location = 'lawyers-1.html';

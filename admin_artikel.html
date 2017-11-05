@@ -183,11 +183,12 @@
       <script src="assets/js/popper.min.js" charset="utf-8"></script>
     <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
     <script type="text/javascript">
-        /* this just grabs the value of the first cookie for your site.
-         * if you use cookies elsewhere, you'll need to add logic to
-         * make sure you get the correct cookie. */
         var text = document.cookie.split(";")[0].split("=")[1];
-        document.getElementById("title").innerHTML = text;
+        if (text == undefined) {
+            document.getElementById("title").innerHTML = "Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya"
+        } else {
+            document.getElementById("title").innerHTML = text;
+        }
       </script>
 </body>
 </html>
