@@ -115,8 +115,7 @@
           <form action="admin_artikel.html" method="post" onsubmit="store()">
               <div class="form-group">
                   <label for="judul">Judul</label>
-                  <input type="text" class="form-control" id="judul" placeholder="Judul artikel anda..."
-                  value="Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya">
+                  <input type="text" class="form-control" id="judul" placeholder="Judul artikel anda...">
                 </div>
                 <div class="row">
                     <div class="col-6">
@@ -158,6 +157,12 @@ We offer solutions to provide legal services in the field of Insolvency & bankru
       function store() {
         var text = document.getElementById("judul").value;
         document.cookie = "text=" + text + "; path=/";
+      }
+      var text = document.cookie.split(";")[0].split("=")[1];
+      if (text == undefined) {
+          document.getElementById("judul").value = "Pandangan Verry Sitorus selaku kuasa hukum PT Bumi Bergetar atas kasus kepailitannya"
+      } else {
+          document.getElementById("judul").value = text;
       }
     </script>
 </body>
