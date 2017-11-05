@@ -167,24 +167,23 @@
             </div>
             <div class="row no-gutters my-5">
                 <div class="card-group my-4">
-                    <div class="card card-profile" id="profile-1">
-                      <div class="card-body">
-                        <h5 class="card-title">Managing Partner</h5><br>
-                        <div class="social">
-                            <a href="#">
-                                <img src="assets/img/ig.png" alt="instagram-logo">
-                            </a> <br>
-                            <a href="#">
-                                <img src="assets/img/fb.png" alt="facebook-logo">
-                            </a>
-                        </div>
-                        <p class="card-text">Verry Sitorus, S.H</p>
-                      </div>
+                <div class="card card-profile" id="profile-1" style="cursor:pointer">
+                  <div class="card-body">
+                    <h5 class="card-title">Managing Partner</h5><br>
+                    <div class="social">
+                        <a href="#">
+                            <img src="assets/img/ig.png" alt="instagram-logo">
+                        </a> <br>
+                        <a href="#">
+                            <img src="assets/img/fb.png" alt="facebook-logo">
+                        </a>
                     </div>
-                    <div class="card">
-                      <img class="card-img-top" src="assets/img/1.png" id="image-1">
-                    </div>
-
+                    <p class="card-text">Verry Sitorus, S.H</p>
+                  </div>
+                </div>
+                <div class="card" style="cursor:pointer">
+                  <img class="card-img-top" src="assets/img/1.png" id="image-1">
+                </div>
 
                   <div class="card card-profile" id="profile-2">
                     <div class="card-body">
@@ -370,6 +369,13 @@
             // TODO: delete before final publish
             var text = document.cookie.split(";")[0].split("=")[1];
             document.getElementById("cookie").innerHTML = text;
+
+            $('#profile-1').on('click', function(event) {
+                 window.location = 'lawyers-1.html';
+            });
+            $('#image-1').on('click', function(event) {
+                 window.location = 'lawyers-1.html';
+            });
         </script>
     </body>
 </html>
