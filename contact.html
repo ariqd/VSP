@@ -72,16 +72,22 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div id="googleMap"></div>
+                            </div>
+                        </div>
                         <div class="row py-5">
                             <div class="col-md-4">
                               <img src="assets/img/logo-tax.png" alt="insolvency">
                               <h4 class="my-4"><span class="red">CONTACT US</span></h4>
-                              <p>Gedung KOPI,<br>
-                              Jl. R.P. Soeroso No. 20,1st floor<br>
-                              Cikini - Menteng, Jakarta Pusat - 10330.<br>
-                              p : + 62 21 3190 7457<br>
-                              f : + 62 21 3190 7248<br>
-                              e : law@vsp.co.id</p> <br>
+                              <p>Gedung Kopi, 1st Floor <br>
+                                Jl. R.P. Soeroso No. 20,<br>
+                                Cikini - Menteng, Jakarta Pusat - 10330.<br>
+                                P : + 62 21 3190 7457<br>
+                                F : + 62 21 3190 7248<br>
+                                E : law@vsp.co.id <br>
+                              </p> <br>
                               <a href="https://www.instagram.com/lawfirmverrysitorus/">
                                   <img src="assets/img/ig.png" alt="instagram-logo">
                               </a>
@@ -113,28 +119,24 @@
                  </div>
                </div>
             </div>
-
-
         <footer class="mt-5">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-md-7">
                         <h5>LAWFIRM VERRY SITORUS &amp; PARTNERS</h5>
                         <p>
-                            Law Firm VERRY SITORUS which was established in 2015 and one of the newest law firm in Jakarta,
-                            although still new but this firm is supported by expert lawyers. We have wide client network especially
-                            in Insolvency and Bankruptcy law, and also National and International Companies and Individuals.
+                            Since 2015, Law Firm Verry Sitorus & Partners have been one of the best law office in Indonesia with a structured vision for serving the best legal services in the name of justice and unity. We have wide client and partner network especially in Insolvency and Bankruptcy Law.
                         </p>
                     </div>
                     <div class="col-md-3">
                         <h5>Contact VSP</h5>
                         <p>
-                            Gedung KOPI,<br>
-                            Jl. R.P. Soeroso No. 20,1st floor<br>
-                            Cikini - Menteng, Jakarta Pusat - 10330. <br>
-                            p : + 62 21 3190 7457 <br>
-                            f : + 62 21 3190 7248 <br>
-                            e : law@vsp.co.id
+                            Gedung Kopi, 1st Floor <br>
+                            Jl. R.P. Soeroso No. 20,<br>
+                            Cikini - Menteng, Jakarta Pusat - 10330.<br>
+                            P : + 62 21 3190 7457<br>
+                            F : + 62 21 3190 7248<br>
+                            E : law@vsp.co.id <br>
                         </p>
                     </div>
                     <div class="col-md-2">
@@ -162,5 +164,30 @@
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
         <script src="assets/js/bootstrap.min.js" charset="utf-8"></script>
+        <script async defer src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCPuOVcESQfbPsBNR6Y4AYxKxHtWGTkZS4"></script>
+        <script type="text/javascript">
+          $(document).ready(function() {
+            function initialize() {
+              var mapProp = {
+                center:new google.maps.LatLng(-6.888891, 107.616021),
+                zoom:16,
+                mapTypeId:google.maps.MapTypeId.ROADMAP,
+                mapTypeControlOptions: {
+                      style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+                      position: google.maps.ControlPosition.BOTTOM_CENTER
+                  }
+              };
+              var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+              var marker = new google.maps.Marker({
+              position: mapProp.center,
+              title:"Verry Sitorus & Partners"
+                });
+
+                marker.setMap(map);
+            }
+            google.maps.event.addDomListener(window, 'load', initialize);
+          });
+        </script>
     </body>
 </html>
